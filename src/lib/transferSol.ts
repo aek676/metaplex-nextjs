@@ -19,6 +19,8 @@ const transferSolToDestination = async ({
   // Import Umi from `umiWithCurrentWalletAdapter`.
   const umi = umiWithCurrentWalletAdapter();
 
+  console.log(`Umi: ${umi.payer.publicKey}`);
+
   // Create a transactionBuilder using the `transferSol` function from the mpl-toolbox.
   const tx = transferSol(umi, {
     destination: publicKey(destination),
