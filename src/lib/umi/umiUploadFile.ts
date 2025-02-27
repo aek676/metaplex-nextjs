@@ -34,4 +34,4 @@ const umiUploadFile = async (file: File) => {
 
 export default umiUploadFile;
 
-// https://arweave.net/2ZBaqqsztXi6A6LfciKUBuGBxZ34QqLjmcwWdSEx9eKE
+// https://devnet.irys.xyz/6gQbZWRnaKBVk9Dvrfvt3tgdvYxPMU49W32MUB4xVNLV
