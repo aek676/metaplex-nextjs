@@ -25,7 +25,7 @@ const UploadFileComponent: React.FC = () => {
       setMessage("Subiendo archivo...");
 
       // Llamamos a tu método umiUploadFile, pasándole el File del input
-      await umiUploadFile(selectedFile);
+      const uri = await umiUploadFile(selectedFile);
 
       setIsLoading(false);
       setMessage("¡Archivo subido con éxito!");
@@ -56,6 +56,18 @@ const UploadFileComponent: React.FC = () => {
           {message}
         </p>
       )}
+
+      <img
+        src="https://devnet.irys.xyz/6gQbZWRnaKBVk9Dvrfvt3tgdvYxPMU49W32MUB4xVNLV"
+        alt="imagen"
+      />
+
+      <embed
+        src="https://devnet.irys.xyz/AUqtkymhNtst5A1wP4FzaWZ7mJiMqY7djBzPHQvY2A4W"
+        width="800px"
+        height="600px"
+        type="application/pdf"
+      />
     </div>
   );
 };

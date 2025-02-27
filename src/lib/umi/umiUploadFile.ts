@@ -27,6 +27,7 @@ const umiUploadFile = async (file: File) => {
     });
 
     console.log("Subido a:", uri);
+    return uri;
   } catch (error) {
     console.error("Error al subir el archivo:", error);
   }
